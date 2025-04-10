@@ -19,8 +19,12 @@ void bubble_sort(int *array, size_t size)
 			{
 				if (array[j] > array[j + 1])
 				{
-			
+					temporaire = (array[j]);
+					array[j] = array[j + 1];
+					array[j + 1] = temporaire;
+					print_array(array, size);
 				}
 			}
+			
 		}
 }
