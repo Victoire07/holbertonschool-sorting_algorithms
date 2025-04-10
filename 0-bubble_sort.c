@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * bubble_sort - trie un tableau d'entiers en ordre croissant
+ * bubble_sort - Trie un tableau d'entiers en ordre croissant
  * @array: Pointeur vers le tableau
  * @size: Nombre d'éléments dans le tableau
  */
@@ -19,7 +19,7 @@ void bubble_sort(int *array, size_t size)
 			{
 				if (array[j] > array[j + 1])
 				{
-					temporaire = (array[j]);
+					temporaire = array[j];
 					array[j] = array[j + 1];
 					array[j + 1] = temporaire;
 					print_array(array, size);
