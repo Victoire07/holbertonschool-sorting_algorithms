@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * selection sort - Trie un tableau d'entiers dans l'ordre croissant
+ * selection_sort - Trie un tableau d'entiers dans l'ordre croissant
  * @array: Pointeur vers le tableau
  * @size: Nombre d'éléments dans le tableau
  */
