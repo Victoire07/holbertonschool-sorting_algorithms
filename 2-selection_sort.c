@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * selection sort -  Trie un tableau d'entiers dans l'ordre croissant
+ * selection sort - Trie un tableau d'entiers dans l'ordre croissant
  * @array: Pointeur vers le tableau
  * @size: Nombre d'éléments dans le tableau
  */
@@ -14,7 +14,7 @@ void selection_sort(int *array, size_t size)
 	for (i = 0; i < size - 1; i++)
 	{
 		minimum_index = i;
-		
+
 	for (j = i + 1; j < size; j++)
 	{
 		if (array[j] < array[minimum_index])
