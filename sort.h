@@ -18,9 +18,10 @@ typedef struct listint_s
 } listint_t;
 
 void bubble_sort(int *array, size_t size);
+void selection_sort(int *array, size_t size);
 
 
-/* fonctions utilitaires fournies */
+/* fonctions fournies utiles pour les tasks */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
