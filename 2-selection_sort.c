@@ -17,14 +17,14 @@ void selection_sort(int *array, size_t size)
 	for (i = 0; i < size - 1; i++)
 	{
 		minimum_index = i;
-
-	for (j = i + 1; j < size; j++)
-	{
-		if (array[j] < array[minimum_index])
+		
+		for (j = i + 1; j < size; j++)
 		{
-			minimum_index = j;
+			if (array[j] < array[minimum_index])
+			{
+				minimum_index = j;
+			}
 		}
-	}
 		if (minimum_index != i)
 		{
 			temporaire = (array[i]);
