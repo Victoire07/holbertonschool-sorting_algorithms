@@ -7,13 +7,19 @@
 void selection_sort(int *array, size_t size)
 {
 	size_t i;
-	size_t minimum_index = i;
+	size_t minimum_index;
 	size_t j;
 	int temp;
 
 	for (i = 0; i < size - 1; i++)
 	{
-		size_t minimum_index = i;
+		minimum_index = i;
+	for (j = i + 1; j < size; j++)
+	{
+		if (array[j] < array[minimum_index])
+		{
+			minimum_index = j;
+		}
 	}
-
+	}
 }
