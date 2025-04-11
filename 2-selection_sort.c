@@ -5,6 +5,7 @@
  * @array: Pointeur vers le tableau
  * @size: Nombre d'éléments dans le tableau
  */
+
 void selection_sort(int *array, size_t size)
 {
 	size_t i;
