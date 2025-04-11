@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * selection_sort - Trie un tableau d'entiers dans l'ordre croissant
  * @array: Pointeur vers le tableau
@@ -27,7 +28,7 @@ void selection_sort(int *array, size_t size)
 		}
 		if (minimum_index != i)
 		{
-			temporaire = (array[i]);
+			temporaire = array[i];
 			array[i] = array[minimum_index];
 			array[minimum_index] = temporaire;
 			print_array(array, size);
