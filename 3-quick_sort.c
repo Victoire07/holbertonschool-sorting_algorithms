@@ -1,7 +1,7 @@
 #include "sort.h"
 /**
  * swap - Swap two elements in an array
- * a: First element
+ * @a: First element
  * @b: Second element
  */
 void swap(int *a, int *b)
@@ -65,7 +65,6 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
 		quick_sort_recursive(array, pivot_index + 1, high, size);
 	}
 }
- 
 /**
  * quick_sort - Main function to sort the entire array
  * @array: The array to sort
@@ -74,7 +73,7 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
 void quick_sort(int *array, size_t size)
 {
 	if (!array || size < 2)
- 		return;
+		return;
 
 	quick_sort_recursive(array, 0, size - 1, size);
 }
