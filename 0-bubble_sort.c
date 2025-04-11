@@ -28,8 +28,9 @@ void bubble_sort(int *array, size_t size)
 				array[j + 1] = temporaire;
 				print_array(array, size);
 			}
-			if (echange == 0)
-			break;
+
 		}
+		if (echange == 0)
+		break;
 	}
 }
